@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Auto | 專業平行進口汽車代理</title>
+    <meta name="description" content="專營日本電動車進口香港，汽車類型評估、電力安全報告、代理申請，全方位一站式服務">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">HORIZON <span class="logo-accent">AUTO</span></a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#showcase">實力展示</a></li>
+                <li><a href="#products">產品專區</a></li>
+                <li><a href="#services">服務</a></li>
+                <li><a href="#process">流程</a></li>
+                <li><a href="#contact">聯絡</a></li>
+            </ul>
+            
+            <a href="#contact" class="nav-cta">立即查詢</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#showcase" class="mobile-link">實力展示</a></li>
+            <li><a href="#products" class="mobile-link">產品專區</a></li>
+            <li><a href="#services" class="mobile-link">服務</a></li>
+            <li><a href="#process" class="mobile-link">流程</a></li>
+            <li><a href="#contact" class="mobile-link">聯絡</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">專業平行進口汽車代理</h1>
+            <p class="hero-subtitle">專營日本電動車進口香港<br>全方位一站式服務</p>
+            
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">免費評估</a>
+                <a href="#showcase" class="btn btn-secondary">睇我哋嘅成績</a>
+            </div>
+            
+            <div class="hero-trust">
+                <span class="trust-badge">✅ 279+ 成功案例</span>
+                <span class="trust-badge">✅ 42 個品牌代理</span>
+                <span class="trust-badge">✅ 24小時回覆</span>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>向下滑動</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- Showcase Section - 實力展示 -->
+    <section class="section showcase" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">實力展示</h2>
+                <p class="section-subtitle">超過 279 項電動車電力安全報告經驗</p>
+            </div>
+            
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">279+</div>
+                    <div class="stat-label">完成報告</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">42</div>
+                    <div class="stat-label">涵蓋品牌</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">90+</div>
+                    <div class="stat-label">車款型號</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">安全把關</div>
+                </div>
+            </div>
+            
+            <!-- Brand Logos -->
+            <div class="brands-showcase">
+                <h3>涵蓋品牌</h3>
+                <div class="brands-grid" id="brandsGrid">
+                    <!-- Brands will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Featured Vehicles -->
+            <div class="featured-vehicles">
+                <h3>精選車款</h3>
+                <div class="vehicle-scroll" id="vehicleScroll">
+                    <!-- Vehicles will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section - 產品專區 -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">產品專區</h2>
+                <p class="section-subtitle">選擇你心儀的車款，或聯絡我們代為進口</p>
+            </div>
+            
+            <div class="products-tabs">
+                <button class="tab-btn active" data-tab="inventory">現有庫存</button>
+                <button class="tab-btn" data-tab="available">可代進口</button>
+            </div>
+            
+            <!-- Inventory Tab -->
+            <div class="tab-content active" id="inventory">
+                <div class="products-grid" id="inventoryGrid">
+                    <!-- Populated by JS -->
+                </div>
+                <div class="products-note">
+                    <p>📦 以上為我們已處理過的車輛記錄。如有興趣，請聯絡我們查詢最新庫存或類似車款。</p>
+                </div>
+            </div>
+            
+            <!-- Available Tab -->
+            <div class="tab-content" id="available">
+                <div class="request-form">
+                    <h3>🎯 想進口其他車款？</h3>
+                    <p>聯絡我們，告訴我們你想要咩車：日本工廠直送、香港交車</p>
+                    
+                    <form class="mini-form" id="requestForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>想要邊款車？</label>
+                                <input type="text" placeholder="例如: Tesla Model Y, BYD Seal" required>
+                            </div>
+                            <div class="form-group">
+                                <label>預算範圍</label>
+                                <select>
+                                    <option value="">請選擇</option>
+                                    <option value="under30">30萬以下</option>
+                                    <option value="30-50">30-50萬</option>
+                                    <option value="50-80">50-80萬</option>
+                                    <option value="80plus">80萬以上</option>
+                                </select>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn btn-primary btn-full">立即查詢代進口</a>
+                    </form>
+                </div>
+                
+                <div class="brands-available">
+                    <h3>熱門可進口品牌</h3>
+                    <div class="brands-grid" id="availableBrands">
+                        <!-- Japanese and other popular brands -->
+                        <div class="brand-tag">🏯 Toyota</div>
+                        <div class="brand-tag">🏯 Lexus</div>
+                        <div class="brand-tag">🏯 Nissan</div>
+                        <div class="brand-tag">🏯 Honda</div>
+                        <div class="brand-tag">🏯 Mazda</div>
+                        <div class="brand-tag">🏯 Subaru</div>
+                        <div class="brand-tag">🏯 Mitsubishi</div>
+                        <div class="brand-tag">⚡ Tesla</div>
+                        <div class="brand-tag">⚡ BYD</div>
+                        <div class="brand-tag">⚡ Mercedes-Benz</div>
+                        <div class="brand-tag">⚡ BMW</div>
+                        <div class="brand-tag">⚡ Audi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">我們的服務</h2>
+                <p class="section-subtitle">從評估到交付，全方位支援</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-animate>
+                    <div class="service-icon">📋</div>
+                    <h3 class="service-title">汽車類型評估</h3>
+                    <p class="service-desc">專業評估進口可行性，確保符合香港法例要求。我們會詳細分析車型資料，提供可行性報告。</p>
+                </div>
+                
+                <div class="service-card" data-animate>
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-title">電動車電力安全報告</h3>
+                    <p class="service-desc">全面檢測電動車電力系統，包括電池狀態、充電系統、高壓電路，確保行車安全。</p>
+                </div>
+                
+                <div class="service-card" data-animate>
+                    <div class="service-icon">📄</div>
+                    <h3 class="service-title">汽車代理申請</h3>
+                    <p class="service-desc">代辦所有進口許可證申請程序，省時省力。我們熟悉流程，大幅縮短等待時間。</p>
+                </div>
+                
+                <div class="service-card" data-animate>
+                    <div class="service-icon">🚢</div>
+                    <h3 class="service-title">日本進口服務</h3>
+                    <p class="service-desc">從日本採購到香港交付，一站式服務。包括運輸、清關、檢驗，全部我哋幫你搞掂。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-us" id="whyus">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">為什麼選擇我們</h2>
+                <p class="section-subtitle">專業團隊，信心之選</p>
+            </div>
+            
+            <div class="usp-grid">
+                <div class="usp-item" data-animate>
+                    <div class="usp-icon">🏆</div>
+                    <h3>專業資格</h3>
+                    <p>多年汽車進口經驗，熟悉香港交通條例同進口法規</p>
+                </div>
+                
+                <div class="usp-item" data-animate>
+                    <div class="usp-icon">🛡️</div>
+                    <h3>可靠保障</h3>
+                    <p>完整文件流程，確保順利通關，零後顧之憂</p>
+                </div>
+                
+                <div class="usp-item" data-animate>
+                    <div class="usp-icon">⚡</div>
+                    <h3>高效服務</h3>
+                    <p>一星期內完成評估，快速回覆每一個查詢</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">服務流程</h2>
+                <p class="section-subtitle">簡單四步，輕鬆完成進口</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step" data-animate>
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📩</div>
+                    <h3>查詢</h3>
+                    <p>聯絡我們，講解你嘅需求同心儀車型</p>
+                </div>
+                
+                <div class="process-step" data-animate>
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🔍</div>
+                    <h3>評估</h3>
+                    <p>專業團隊評估進口可行性同費用</p>
+                </div>
+                
+                <div class="process-step" data-animate>
+                    <div class="step-number">3</div>
+                    <div class="step-icon">📝</div>
+                    <h3>代理</h3>
+                    <p>代辦所有進口文件同許可證申請</p>
+                </div>
+                
+                <div class="process-step" data-animate>
+                    <div class="step-number">4</div>
+                    <div class="step-icon">🎉</div>
+                    <h3>完成</h3>
+                    <p>汽車交付，你可以驗收享用</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">立即查詢</h2>
+                <p class="section-subtitle">填寫以下表格，我們將在24小時內回覆</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">姓名 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">電話 <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="請輸入聯絡電話" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">電郵</label>
+                        <input type="email" id="email" name="email" placeholder="請輸入電郵地址（可選）">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="carType">汽車類型興趣</label>
+                        <select id="carType" name="carType">
+                            <option value="">請選擇感興趣的汽車類型</option>
+                            <option value="ev">電動車</option>
+                            <option value="hybrid">混合動力車</option>
+                            <option value="petrol">汽油車</option>
+                            <option value="import">想我幫我進口</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">查詢內容 <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="請描述您想查詢的內容，例如：心儀車型、進口地區、預算等" required></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                        <span class="btn-text">提交查詢</span>
+                        <span class="btn-loading" style="display: none;">
+                            <span class="spinner"></span>
+                            提交中...
+                        </span>
+                    </button>
+                    
+                    <p class="privacy-note">🔒 我們重視您的私隱，不會向第三方透露您的資料</p>
+                </form>
+                
+                <div class="contact-info" data-animate>
+                    <div class="contact-card">
+                        <h3>聯絡方式</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>info@horizonauto.hk</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+852 XXXX XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💬</span>
+                            <span>WhatsApp 查詢</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>服務時間</h3>
+                        <p>星期一至五: 9:00 - 18:00</p>
+                        <p>星期六: 10:00 - 14:00</p>
+                        <p>星期日及公眾假期: 休息</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">✅</div>
+            <h3>查詢已提交！</h3>
+            <p>感謝您的查詢，我們將在24小時內回覆您。</p>
+            <button class="btn btn-primary" onclick="closeModal()">確定</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">HORIZON <span class="logo-accent">AUTO</span></span>
+                    <p>專業平行進口汽車代理</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#showcase">實力展示</a>
+                    <a href="#products">產品專區</a>
+                    <a href="#services">服務</a>
+                    <a href="#process">流程</a>
+                    <a href="#contact">聯絡</a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Horizon Auto. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Vehicle Data - from EVI reports
+        const vehicleData = {
+            brands: [
+                { name: 'TESLA', count: 36, icon: '⚡' },
+                { name: 'BYD', count: 32, icon: '⚡' },
+                { name: 'JAECOO', count: 81, icon: '🏯' },
+                { name: 'Ninebot', count: 14, icon: '🛴' },
+                { name: 'MAXUS', count: 12, icon: '🚐' },
+                { name: 'AION', count: 9, icon: '⚡' },
+                { name: 'EVEASY', count: 8, icon: '⚡' },
+                { name: 'BMW', count: 8, icon: '🏎️' },
+                { name: 'Toyota', count: 6, icon: '🏯' },
+                { name: 'LINGBOX', count: 6, icon: '📦' },
+                { name: 'DENZA', count: 5, icon: '⚡' },
+                { name: 'OMODA', count: 5, icon: '🏯' },
+                { name: 'Nissan', count: 5, icon: '🏯' },
+                { name: 'SKYWORTH', count: 4, icon: '📺' },
+                { name: 'MERCEDES BENZ', count: 4, icon: '🏎️' }
+            ],
+            featured: [
+                { make: 'TESLA', model: 'Model 3 Long Range', year: '2020' },
+                { make: 'BYD', model: 'M6 Superior', year: '2024' },
+                { make: 'Toyota', model: 'Alphard PHEV', year: '2025' },
+                { make: 'TESLA', model: 'Model X', year: '2023' },
+                { make: 'JAECOO', model: 'J7 PHEV', year: '2024' },
+                { make: 'FIREFLY', model: 'Firefly', year: '2025' },
+                { make: 'BYD', model: 'Seal', year: '2024' },
+                { make: 'AION', model: 'V Plus', year: '2024' },
+                { make: 'Mercedes-Benz', model: 'EQS', year: '2024' },
+                { make: 'BMW', model: 'iX3', year: '2023' },
+                { make: 'Nissan', model: 'Ariya', year: '2024' },
+                { make: 'Lexus', model: 'RZ', year: '2024' }
+            ]
+        };
+
+        // Populate brands
+        function populateBrands() {
+            const grid = document.getElementById('brandsGrid');
+            if (!grid) return;
+            
+            grid.innerHTML = vehicleData.brands.map(brand => `
+                <div class="brand-card">
+                    <span class="brand-icon">${brand.icon}</span>
+                    <span class="brand-name">${brand.name}</span>
+                    <span class="brand-count">${brand.count}輛</span>
+                </div>
+            `).join('');
+        }
+
+        // Populate featured vehicles
+        function populateVehicles() {
+            const scroll = document.getElementById('vehicleScroll');
+            if (!scroll) return;
+            
+            scroll.innerHTML = vehicleData.featured.map(v => `
+                <div class="vehicle-card">
+                    <div class="vehicle-badge">${v.make}</div>
+                    <h4>${v.model}</h4>
+                    <div class="vehicle-details">
+                        <span>📅 ${v.year}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            populateBrands();
+            populateVehicles();
+        });
+    </script>
+</body>
+</html>
