@@ -250,6 +250,23 @@ function initContactForm() {
     }
     
     async function simulateSubmission(data) {
+        // Build WhatsApp pre-filled message
+        const waMessage = `你好，我想查詢平行進口汽車服務！
+
+姓名: ${data.name}
+電話: ${data.phone}
+電郵: ${data.email || '未提供'}
+感興趣類型: ${data.carType || '未選擇'}
+查詢內容: ${data.message}
+
+---
+提交於: ${data.timestamp}`;
+
+        const waUrl = `https://wa.me/85290271033?text=${encodeURIComponent(waMessage)}`;
+        
+        // Open WhatsApp in new tab
+        window.open(waUrl, '_blank');
+        
         // Simulate network delay
         return new Promise(resolve => {
             setTimeout(resolve, 1500);
