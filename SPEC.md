@@ -77,15 +77,15 @@ Success:     #4ecca3 (綠色 - 成功狀態)
    - Icons + short descriptions
    - Focus on: 專業 / 可靠 / 高效
 
-5. **Process Flow**
+5. **About Section** ✅ (added 2026-04-08)
+   - Company intro: NextE Limited
+   - Mission statement
+   - Key stats: 279+ reports, 5+ years experience, 100% satisfaction
+
+6. **Process Flow**
    - Horizontal timeline/stepper
    - 4 steps: 查詢 → 評估 → 代理 → 完成
    - Each step with icon and brief description
-
-6. **About Section**
-   - Company intro
-   - Mission statement
-   - Brief credentials/experience
 
 7. **Contact/Inquiry Section** ⭐ 重点
    - Form fields:
@@ -186,7 +186,8 @@ horizon-auto/
 ├── index.html
 ├── styles.css
 ├── script.js
-└── SPEC.md
+├── SPEC.md
+└── sitemap.xml  ✅ (added 2026-04-08)
 ```
 
 ### Form Handling
